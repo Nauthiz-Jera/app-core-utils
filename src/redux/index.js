@@ -51,7 +51,7 @@ class ConfigureStore {
     this.reducers[key] = reducer;
 
     // Generate a new combined reducer
-    this.combinedReducer = combineReducers(this.reducers);\
+    this.combinedReducer = combineReducers(this.reducers);
     this.store.replaceReducer(this.combinedReducer);
   }
 
